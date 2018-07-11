@@ -11,30 +11,28 @@
                                 </ul>
                             </div>
                             <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                                <h3>Nos Logiciels</h3>
+                                <h3>Menu</h3>
                                 <ul>
-                                    <li> <a href="#">SYGCOMA</a> </li>
-                                    <li> <a href="#">COROSSOL</a> </li>
-                                    <li> <a href="#">PARC AUTO</a> </li>
-                                    <li> <a href="#">SMS SENDER</a> </li>
+                                    <li> <a href="#">Acceuil</a> </li>
+                                    <li> <a href="#">Evenement</a> </li>
+                                    <li> <a href="#">Contact</a> </li>
+                                    <li> <a href="#">Connexion</a> </li>
                                 </ul>
                             </div>
                             <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                                 <h3>Assistance</h3>
                                 <ul>
                                     <li> Assistance téléphonique</li>
-                                    <li> Télé-assistance</li>
                                     <li> Assistance sur site</li>
-                                    <li> Forum</li>
                                 </ul>
                             </div>
                             <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
                                 <h3>Contact</h3>
                                 <ul>
-                                    <li> LAWCHEF Sarl </li>
+                                    <li> IBK TECH Sarl </li>
                                     <li> Cotonou , BENIN</li>
-                                    <li> Tél.: +229 60 20 20 20 </li>
-                                    <li> contact@lawchef.com </li>
+                                    <li> Tél.: +229 69 47 78 87</li>
+                                    <li> contact@ibktechnologies.com </li>
                                 </ul>
                             </div>
                             <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">

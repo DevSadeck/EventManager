@@ -61,7 +61,7 @@
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
                         </p>
                         <p>
-                            <a href="#" class="btn btn-primary" role="button">Button</a> 
+                            <a href="#" class="btn btn-primary" role="button">Plus</a> 
                         </p>
                     </div>
                  </div>
@@ -80,7 +80,7 @@
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
                         </p>
                         <p>
-                            <a href="#" class="btn btn-primary" role="button">Button</a> 
+                            <a href="#" class="btn btn-primary" role="button">Plus</a> 
                         </p>
                     </div>
                  </div>
@@ -99,7 +99,7 @@
                             fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
                         </p>
                         <p>
-                            <a href="#" class="btn btn-primary" role="button">Button</a> 
+                            <a href="#" class="btn btn-primary" role="button">Plus</a> 
                         </p>
                     </div>
                  </div>
