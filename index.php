@@ -42,7 +42,8 @@
 
         <div class="row titre_evenement">
             <div class="col-lg-12 text-center col-md-1 col-sm-1 ">
-               <h1 class="">Evenements</h1>
+                <a id="NosEvenements" href="#"></a>
+               <h1 class="">Evenements </h1>
             </div>
         </div>
 
@@ -130,7 +131,7 @@
   
     <nav aria-label="...">
         <ul class="pager">
-            <li><a href="#">Voir Plus</a></li>
+            <li><a href="liste_event.php">Voir Plus</a></li>
         </ul>
     </nav>
     <div class="row">
@@ -171,7 +172,11 @@
 
    </body> 
     
-   
+    <script src="js/jquery-3.2.1.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
 
     
 </html>

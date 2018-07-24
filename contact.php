@@ -25,7 +25,7 @@
     </head>
  
     <body>
-        <?php include("header2contact.php"); ?> 
+        <?php //include("header2contact.php"); ?> 
         <div class="row">
             <div  class="col-lg-12">                
             <hr id="separHaut">                          

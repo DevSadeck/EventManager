@@ -48,13 +48,13 @@
     <div class="row">
             <div class="<col-lg-12">
                 <div class="well-block">
-                    <form action="enregistrer_evenement.php" method="POST" >
+                    <form action="enregistrement_event.php" method="POST" >
                         <!-- Form start -->
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="titre">Titre :</label>
-                                    <input id="titre" name="titre" type="text" placeholder="titre de l'évenement" class="form-control input-md">
+                                    <label class="control-label"  for="titre">Titre :</label>
+                                    <input required id="titre" name="titre" type="text" placeholder="titre de l'évenement" class="form-control input-md">
                                 </div>
                             </div>
 
@@ -63,7 +63,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="lieu">Lieu :</label>
-                                    <input id="lieu" name="lieu" type="text" placeholder="lieu de l'évenement " class="form-control input-md">
+                                    <input required id="lieu" name="lieu" type="text" placeholder="lieu de l'évenement " class="form-control input-md">
                                 </div>
                             </div>
 
@@ -71,7 +71,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="datedebut">Date début :</label>
-                                    <input id="datedebut" name="datedebut" type="text" placeholder="date de début " class="form-control input-md">
+                                    <input required id="datedebut" name="datedebut" type="text" placeholder="date de début " class="form-control input-md">
                                 </div>
                             </div>
                             
@@ -79,7 +79,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="datefin">Date de fin :</label>
-                                    <input id="datefin" name="datefin" type="text" placeholder="date de fin" class="form-control input-md">
+                                    <input required id="datefin" name="datefin" type="text" placeholder="date de fin" class="form-control input-md">
                                 </div>
                             </div>
                                     
@@ -87,7 +87,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="horaire">Horaire :</label>
-                                    <input id="horaire" name="horaire" type="text" placeholder="horaire" class="form-control input-md">
+                                    <input required id="horaire" name="horaire" type="text" placeholder="horaire" class="form-control input-md">
                                 </div>
                             </div>   
 
@@ -95,9 +95,44 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="nombre">Nombre de participants :</label>
-                                    <input id="nombre" name="nombre" type="text" placeholder="nombre de participants" class="form-control input-md">
+                                    <input required id="nombre" name="nombre" type="text" placeholder="nombre de participants" class="form-control input-md">
                                 </div>
                             </div>   
+
+
+                            <!-- Text input-->
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="montant">Montant :</label>
+                                    <input required id="montant" name="montant" type="text" placeholder="montant plus devise" class="form-control input-md" value="0FCFA" >
+                                </div>
+                            </div>   
+
+
+                            <!-- Text input-->
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="montant">ID PERSONNE :</label>
+                                    <input required id="idpersonne" name="idpersonne" type="text" placeholder="" class="form-control input-md" value="1" >
+                                </div>
+                             </div>   
+                            
+                             <!-- Text input-->
+                             <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="photo">Photo :</label>
+                                    <input required id="photo" name="photo" type="text" placeholder="" class="form-control input-md" value="1" >
+                                </div>
+                             </div>   
+
+                             <!-- Text input-->
+                             <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="control-label" for="valider">VALIDER :</label>
+                                    <input required id="valider" name="valider" type="text" placeholder="" class="form-control input-md" value="0" >
+                                </div>
+                             </div>   
+
 
 
                              <!-- Text input-->
@@ -105,10 +140,10 @@
                                 <div class="form-group">
                                     <label class="control-label" for="type">Type d'évenement :</label>
 
-                                        <select class="form-control">
-                                            <option>Conférence</option>
-                                            <option>Forum</option>
-                                            <option>Autre</option>
+                                        <select id="typeevent" name="typeevent"  class="form-control">
+                                            <option value="conference">Conférence</option>
+                                            <option value="forum">Forum</option>
+                                            <option value="autre">Autre</option>   
                                          </select>
 
                                      </div>
@@ -118,9 +153,9 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="entree">Entrée :</label>
-                                        <select class="form-control">
-                                            <option>Gratuite</option>
-                                            <option>Payante</option>
+                                        <select id="entree" name="entree"  class="form-control">
+                                            <option value="gratuit">Gratuite</option>
+                                            <option value="payant">Payante</option>
                                         </select>
                                 </div>
                             </div>    
