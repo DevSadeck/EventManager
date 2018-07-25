@@ -1,3 +1,9 @@
+<?php
+// On démarre la session AVANT d'écrire du code HTML
+session_start();
+// On s'amuse à créer quelques variables de session dans $_SESSION
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -71,7 +77,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="datedebut">Date début :</label>
-                                    <input required id="datedebut" name="datedebut" type="text" placeholder="date de début " class="form-control input-md">
+                                    <input required id="datedebut" name="datedebut" type="date" placeholder="date de début " class="form-control input-md">
                                 </div>
                             </div>
                             
@@ -79,7 +85,7 @@
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <label class="control-label" for="datefin">Date de fin :</label>
-                                    <input required id="datefin" name="datefin" type="text" placeholder="date de fin" class="form-control input-md">
+                                    <input required id="datefin" name="datefin" type="date" placeholder="date de fin" class="form-control input-md">
                                 </div>
                             </div>
                                     
@@ -110,26 +116,26 @@
 
 
                             <!-- Text input-->
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 hidden">
                                 <div class="form-group">
-                                    <label class="control-label" for="montant">ID PERSONNE :</label>
-                                    <input required id="idpersonne" name="idpersonne" type="text" placeholder="" class="form-control input-md" value="1" >
+                                    <label class="control-label " for="montant">ID PERSONNE :</label>
+                                    <input required id="idpersonne" name="idpersonne" type="text" placeholder="" class="form-control input-md " value="<?php  if(isset($_SESSION['idpers']) AND $_SESSION['idpers']!==''){ Echo $_SESSION['idpers'] ;  } else{ echo $_SESSION['idpers']; }?>" >
                                 </div>
                              </div>   
                             
                              <!-- Text input-->
-                             <div class="col-lg-6">
+                             <div class="col-lg-6 hidden">
                                 <div class="form-group">
-                                    <label class="control-label" for="photo">Photo :</label>
-                                    <input required id="photo" name="photo" type="text" placeholder="" class="form-control input-md" value="1" >
+                                    <label class="control-label " for="photo">Photo :</label>
+                                    <input required id="photo" name="photo" type="text" placeholder="" class=" form-control input-md" value="VIDE" >
                                 </div>
                              </div>   
 
                              <!-- Text input-->
-                             <div class="col-lg-6">
+                             <div class="col-lg-6 hidden">
                                 <div class="form-group">
                                     <label class="control-label" for="valider">VALIDER :</label>
-                                    <input required id="valider" name="valider" type="text" placeholder="" class="form-control input-md" value="0" >
+                                    <input required id="valider" name="valider" type="text" placeholder="" class="form-control input-md" value="NON" >
                                 </div>
                              </div>   
 
