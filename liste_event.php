@@ -1,3 +1,9 @@
+
+<?php
+// On démarre la session AVANT d'écrire du code HTML
+session_start();
+// On s'amuse à créer quelques variables de session dans $_SESSION
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -19,9 +25,9 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
     <script></script>
 </head>
 
@@ -29,8 +35,8 @@
 
     <?php 
 
-        include("header.php");
-        include 'config.php';
+            include("header.php");
+            include("config.php");
 
     ?>
 
@@ -47,74 +53,82 @@
         <br>
 
         <?php 
-            
-            $stmt = $DB_con->prepare("SELECT * FROM EVENEMENT order by IdEvent desc");
-            $stmt->execute();   
+                
+                $stmt = $DB_con->prepare("SELECT * FROM EVENEMENT order by IdEvent desc");
+                $stmt->execute();   
 
-            if($stmt->rowCount() > 0)
-            {
-                while ($rows=$stmt->fetch(PDO::FETCH_ASSOC)) 
+                if($stmt->rowCount() > 0)
                 {
-                        extract($rows); 
-                        $idEvent= $rows['IdEvent'];
-                        $titre= $rows['TitreEvent'];
-                        $lieu= $rows['LieuEvent'];
-                        $datedebut= $rows['DateDebut'];
-                        $datefin= $rows['DateFin'];
-                        $horaire= $rows['Horaire'];
-                        $nombre= $rows['NbrPlace'];
-                        $entree= $rows['Entree'];
-                        $contenu= $rows['Descriptions'];
-                        $photo= $rows['PhotoEvent'];
-                        $valider= $rows['Valider'];
-                        $typeevent= $rows['IdTypeEvent'];
-                        $idpersonne= $rows['IdPers'];
-                        $montant= $rows['Montant'];
+                    while ($rows=$stmt->fetch(PDO::FETCH_ASSOC)) 
+                    {
+                            extract($rows); 
+                            $idEvent= $rows['IdEvent'];
+                            $titre= $rows['TitreEvent'];
+                            $lieu= $rows['LieuEvent'];
+                            $datedebut= $rows['DateDebut'];
+                            $datefin= $rows['DateFin'];
+                            $horaire= $rows['Horaire'];
+                            $nombre= $rows['NbrPlace'];
+                            $entree= $rows['Entree'];
+                            $contenu= $rows['Descriptions'];
+                            $photo= $rows['PhotoEvent'];
+                            $valider= $rows['Valider'];
+                            $typeevent= $rows['IdTypeEvent'];
+                            $idpersonne= $rows['IdPers'];
+                            $montant= $rows['Montant'];
 
 
-                        $stmt1 = $DB_con->prepare("SELECT count(IdPers) as LeNombre   FROM PARTICIPER where IdEvent=? ");
-                        $stmt1->execute([$IdFomration]);  
+                            $stmt1 = $DB_con->prepare("SELECT count(IdPers) as LeNombre   FROM PARTICIPER where IdEvent=? ");
+                            $stmt1->execute([$idEvent]);  
 
-                        if($stmt1->rowCount() > 0)
-                        {
-                            while ($rows=$stmt1->fetch(PDO::FETCH_ASSOC)) 
+                            if($stmt1->rowCount() > 0)
                             {
-                                    extract($rows); 
-                                    $LeNombre= $rows['LeNombre'];
-                                 
+                                while ($rows=$stmt1->fetch(PDO::FETCH_ASSOC)) 
+                                {
+                                        extract($rows); 
+                                        $LeNombre= $rows['LeNombre'];
+                                    
+                                }
                             }
-                        }
 
-                        $NbrPlaceRestante =  $nombre - $LeNombre;
+                            $NbrPlaceRestante =  $nombre - $LeNombre;
 
-                        $progreesion= ($LeNombre * 100)/ $nombre;
+                            $progreesion= ($LeNombre * 100)/ $nombre;
 
 
-        ?>
+            ?>
 
 
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h3 class="panel-title"><?php echo $titre; ?></h3>
+                        <h3 class="panel-title">
+                            <?php echo $titre; ?>
+                        </h3>
                     </div>
                     <div class="mise_en_forme panel-body">
                         <div class="row">
 
                             <div class="col-lg-12">
-                                 <?php echo $contenu; ?>
+                                <?php echo $contenu; ?>
 
                                 <hr>
 
                                 <h5>Date debut :
-                                    <strong> <?php echo $datedebut; ?></strong>
+                                    <strong>
+                                        <?php echo $datedebut; ?>
+                                    </strong>
                                 </h5>
                                 <h5>Date Fin :
-                                    <strong><?php echo $datefin ;?></strong>
+                                    <strong>
+                                        <?php echo $datefin ;?>
+                                    </strong>
                                 </h5>
                                 <h5>Horaires :
-                                    <strong><?php echo $horaire ;?></strong>
+                                    <strong>
+                                        <?php echo $horaire ;?>
+                                    </strong>
                                 </h5>
 
                                 <hr>
@@ -138,15 +152,13 @@
                             </div>
                         </div>
 
-
-
-                        <button onclick="location.href = '" type="" class="btn btn-primary pull-right">S'inscrire pour cette formation </button>
+                        <button onclick="location.href = 'verifier_connexion_pour_participer_event.php?idEven=<?php  echo $idEvent;?>';" type="" class="btn btn-primary pull-right">Participer</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <?php } ?>
+        <?php }} ?>
     </div>
 
 
@@ -169,8 +181,4 @@
 
 
 </body>
-
-
-
-
 </html>

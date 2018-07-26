@@ -1,4 +1,4 @@
-alert('texte');
+
 
 $(document).ready(function (){
 	$("#evenement").click(function (){

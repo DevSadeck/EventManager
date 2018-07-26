@@ -147,9 +147,9 @@ session_start();
                                     <label class="control-label" for="type">Type d'évenement :</label>
 
                                         <select id="typeevent" name="typeevent"  class="form-control">
-                                            <option value="conference">Conférence</option>
-                                            <option value="forum">Forum</option>
-                                            <option value="autre">Autre</option>   
+                                            <option value="1">Conférence</option>
+                                            <option value="2">Forum</option>
+                                            <option value="3">Autre</option>   
                                          </select>
 
                                      </div>

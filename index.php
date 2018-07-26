@@ -60,7 +60,7 @@ session_start();
                 <div class="thumbnail">
                     <img src="images/comp.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>Formation sur la programmation</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -79,7 +79,7 @@ session_start();
                 <div class="thumbnail">
                     <img src="images/comp.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>Conférence débat sur la vie</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -98,7 +98,7 @@ session_start();
                 <div class="thumbnail">
                     <img src="images/comp.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>Apprentissage de la langue anglaise</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -117,7 +117,7 @@ session_start();
                 <div class="thumbnail">
                     <img src="images/comp.jpg" alt="...">
                     <div class="caption">
-                        <h3>Thumbnail label</h3>
+                        <h3>Forum national sur la santé</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
@@ -152,16 +152,16 @@ session_start();
     <div class="bloc_partenaire">
         <div class="row">
             <div class="col-lg-3">
-                <img src="images/2.png" alt="">
+                <img src="images/10.png" alt="">
             </div>
             <div class="col-lg-3">
-                <img src="images/2.png" alt="">
+                <img src="images/10.png" alt="">
             </div>
             <div class="col-lg-3">
-                <img src="images/2.png" alt="">
+                <img src="images/10.png" alt="">
             </div>
             <div class="col-lg-3">
-                <img src="images/2.png" alt="">
+                <img src="images/10.png" alt="">
             </div>
         </div>
     </div>

@@ -39,7 +39,7 @@
                                 <h3>News Letter</h3>
                                 <ul>
                                     <li>
-                                        <form action="enregistrer_mail.php" method="POST" >
+                                        <form action="enregistrer_news_letter.php" method="POST" >
                                             <div class="input-append newsletter-box text-center">
                                                 <input  type="Email" name="mail_abonne" class="full text-center" placeholder="Email ">
                                                 <button class="btn  bg-gray" type="submit">  <i class="fa fa-long-arrow-right"> </i> </button>
@@ -66,7 +66,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 col-lg-offset-4">
-                                <p class="colored pull-left">Copyright © LawChef SARL 2008-2017 Tous droits réservés.</p> 
+                                <p class="colored pull-left">Copyright © 2018 Tous droits réservés.</p> 
                             </div>
                             
                         </div>
